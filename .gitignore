@@ -1,0 +1,27 @@
+# local secrets: never commit
+key.txt
+**/key.txt
+.env
+.env.*
+*.key
+*.pem
+
+# python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# collected outputs (只保留 mock 样例)
+data/*.csv
+data/*.json
+!data/mock-demo.csv
+!data/mock-demo.bids.csv
+!data/mock-demo.sources.csv
+!data/mock-demo.run.json
+
+# editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
